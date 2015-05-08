@@ -8,7 +8,8 @@ Sample Application with Material Design
 ![minipic](https://github.com/dhaval0122/ActionBar-Navigation-Tabs/blob/master/device-2015-05-04-101820_1.gif)
 
 img[alt="minipic"] { 
-  max-width:  420px; 
+  width:  480px; 
+  height:  720px; 
   display: block;
 }
 
