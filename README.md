@@ -5,7 +5,12 @@ Material design is a comprehensive guide for visual, motion, and interaction des
 
 Sample Application with Material Design
 
-![Alt text](https://github.com/dhaval0122/ActionBar-Navigation-Tabs/blob/master/device-2015-05-04-101820_1.gif "Material Design - 1" width="200" height="200" )
+![minipic](https://github.com/dhaval0122/ActionBar-Navigation-Tabs/blob/master/device-2015-05-04-101820_1.gif)
+
+img[alt="minipic"] { 
+  max-width:  420px; 
+  display: block;
+}
 
 ![Alt text](https://github.com/dhaval0122/ActionBar-Navigation-Tabs/blob/master/device-2015-05-04-101859_2.gif "Material Design - 2")
 
