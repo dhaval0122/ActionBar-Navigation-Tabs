@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin1">8dp</dimen>
+    <dimen name="activity_vertical_margin1">8dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">320dp</dimen>
+
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="fab_press_translation_z">9dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_small">40dp</dimen>
+    <dimen name="fab_icon_size">24dp</dimen>
+
+
+    <dimen name="fab_scroll_threshold">4dp</dimen>
+
+    <dimen name="android_spaces_large">16dp</dimen>
+    <dimen name="android_spaces">8dp</dimen>
+
+
+    <dimen name="header_height">298dp</dimen>
+    <dimen name="min_header_height">250dp</dimen>
+    <dimen name="header_logo_size">100dp</dimen>
+
+
+    <!-- google io code-->
+    <dimen name="navdrawer_chosen_account_height">140dp</dimen>
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="navdrawer_profile_image_size">45dp</dimen>
+    <dimen name="session_details_extra_space_bottom">48dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <!-- Text indicating additional session links -->
+    <string name="session_links">More</string>
+    <dimen name="add_to_schedule_button_height_no_padding">40dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="session_details_floating_width">500dp</dimen>
+    <dimen name="session_details_floating_height">650dp</dimen>
+
+
+    <dimen name="dp56">56dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp13">13dp</dimen>
+    <dimen name="dp72">72dp</dimen>
+    <dimen name="dp300">300dp</dimen>
+</resources>

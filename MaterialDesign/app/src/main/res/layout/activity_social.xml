@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.djandroid.jdroid.materialdesign.googleio.ObservableScrollView
+        android:id="@+id/floating_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/floating_scroll_child"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/floating_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp300"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/my_pic" />
+
+                <LinearLayout
+                    android:id="@+id/body_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/floating_img"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/test_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp72"
+                        android:paddingRight="@dimen/dp16"
+                        android:paddingTop="@dimen/dp16"
+                        android:text="@string/long_text1"
+                        android:textColor="@android:color/black" />
+
+
+                    <LinearLayout
+                        android:id="@+id/session_speakers_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/test_text"
+                        android:layout_marginTop="@dimen/element_spacing_normal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/session_speakers_header"
+                            style="@style/SessionDetailSectionHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/keyline_2_session_detail"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="@string/session_speakers" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <View
+                        android:id="@+id/title_background_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/floating_title_bar_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp72"
+                        android:paddingRight="@dimen/dp16"
+                        android:paddingTop="@dimen/dp13"
+                        android:text="Social Detail inside Floating Title"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FAB -->
+                <include layout="@layout/include_add_schedule_fab" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.djandroid.jdroid.materialdesign.googleio.ObservableScrollView>
+
+    <!-- FAB -->
+    <include layout="@layout/toolbar_actionbar" />
+</FrameLayout>

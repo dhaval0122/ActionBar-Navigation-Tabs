@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Material Design</string>
+    <string name="title_section1">Floting Action</string>
+    <string name="title_section2">Tabs</string>
+    <string name="title_section3">DJ-Android</string>
+    <string name="title_section4">About</string>
+    <string name="title_section5">Social</string>
+    <string name="title_section6">Card and Recycle</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="header_title">Test title text</string>
+    <string name="header_subtitle">Test subtitle text</string>
+
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#0288d1</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorPrimaryblack">#000000</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#607d8b</color>
+    <color name="fab_color_1">#607d8b</color>
+    <color name="fab_color_1_muted">#607d8b</color>
+    <color name="fab_color_2">@color/colorPrimary</color>
+    <color name="fab_color_2_muted">@color/colorPrimaryDark</color>
+
+    <drawable name="actionbar_bg">@color/colorPrimary</drawable>
+
+
+    <string-array name="android_version">
+        <item>Android alpha</item>
+        <item>Android beta</item>
+        <item>1.5 Cupcake (API level 3)</item>
+        <item>1.6 Donut (API level 4)</item>
+        <item>2.0 Eclair (API level 5)</item>
+        <item>2.0.1 Eclair (API level 6)</item>
+        <item>2.1 Eclair (API level 7)</item>
+        <item>2.2–2.2.3 Froyo (API level 8)</item>
+        <item>2.3–2.3.2 Gingerbread (API level 9)</item>
+        <item>2.3.3–2.3.7 Gingerbread (API level 10)</item>
+        <item>3.0 Honeycomb (API level 11)</item>
+        <item>3.1 Honeycomb (API level 12)</item>
+        <item>3.2 Honeycomb (API level 13)</item>
+        <item>4.0–4.0.2 Ice Cream Sandwich (API level 14)</item>
+        <item>4.0.3–4.0.4 Ice Cream Sandwich (API level 15)</item>
+        <item>4.1 Jelly Bean (API level 16)</item>
+        <item>4.2 Jelly Bean (API level 17)</item>
+        <item>Android 4.3 Jelly Bean (API level 18)</item>
+        <item>Android 4.4 KitKat (API level 19)</item>
+        <item>Android 4.4 KitKat with wearable extensions (API level 20)</item>
+        <item>Android 5.0–5.0.2 Lollipop (API level 21)</item>
+        <item>Android 5.1 Lollipop (API level 22)</item>
+    </string-array>
+
+
+    <!-- google io code-->
+    <color name="session_photo_scrim">#6000</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="navdrawer_text_color_selected">@color/colorPrimary</color>
+    <color name="navdrawer_text_color">@color/body_text_1</color>
+    <color name="body_text_1">#de000000</color>
+    <color name="navdrawer_icon_tint_selected">@color/colorPrimary</color>
+    <color name="navdrawer_icon_tint">#888</color>
+    <string name="placeholder_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec eleifend arcu, eu convallis nisi. Etiam bibendum, tellus nec ultricies suscipit, metus justo fringilla urna, non mollis tortor libero non enim. Mauris sit amet venenatis risus, at ullamcorper ligula. Maecenas adipiscing non odio ut hendrerit. Phasellus pharetra id sapien laoreet sagittis. Etiam mattis bibendum elit. Vestibulum rutrum a libero eget facilisis. Duis tempor quam velit, at viverra tellus faucibus ut. Mauris venenatis odio sed lorem dignissim, vitae tristique arcu sagittis.</string>
+    <!-- Shown on the Session page, alerting user that no details could be found for that session. -->
+    <string name="empty_session_detail">No session details found.</string>
+    <color name="body_text_disabled">#44000000</color>
+    <!-- Section title for videos related to a particular event session -->
+    <string name="related_videos">Related Videos</string>
+    <!-- Label for a session section listing the requirements for the session -->
+    <string name="session_requirements">Requirements</string>
+    <!-- Label for a session section listing the presenters at the session -->
+    <string name="session_speakers">User Information</string>
+    <color name="body_text_2">#8a000000</color>
+    <color name="theme_accent_1">#00b0ff</color>
+    <color name="theme_accent_1_light">#8ad4fa</color>
+    <!-- Label on a button that, when clicked, adds the currently displayed session to their schedule. -->
+    <string name="add_to_schedule">Add to schedule</string>
+
+    !-- Card text asking the user to provide session feedback -->
+    <string name="session_give_feedback_message">How was this session? Would you like to send feedback?</string>
+    <!-- Button of a card in session or session explorer that dismiss the card.
+    One sample of such card is "How was this session? We would love to hear your feedback"  with
+    "Give feedback" and "No, thanks" as buttons. [CHAR_LIMIT=20]-->
+    <string name="no_thanks">No, thanks</string>
+    <!-- Label for a button to answer the question "Would you like to send feedback
+   about this session?" which, when clicked, allows the user to send their feedback (ratings
+   and comments) about a particular session [CHAR_LIMIT=10]. -->
+    <string name="give_feedback">Yes</string>
+
+    <!-- Card text indicating the session is being broadcast right now and is available on live stream -->
+    <string name="session_live_now_message">This session is being broadcast live right now! Would you like to watch the live stream?</string>
+
+    <!-- Text for a button which allows the user to watch this particular session on live stream. -->
+    <string name="watch_now">Watch Now!</string>
+
+    <color name="theme_accent_2">#e91e63</color>
+
+    <color name="default_session_color">@color/colorPrimary</color>
+    <!-- Button text for submitting session feedback -->
+    <string name="session_feedback_submitlink">Submit Feedback</string>
+    <!-- Link text taking the user to the session's YouTube page -->
+    <string name="session_link_youtube">YouTube video</string>
+    <!-- Link text taking the user to the session's Google Moderator page -->
+    <string name="session_link_moderator">Moderator</string>
+    <!-- Link text taking the user to the session's slides page -->
+    <string name="session_link_pdf">Slides</string>
+    <!-- Link text taking the user to the session's notes page -->
+    <string name="session_link_notes">Official notes</string>
+    <integer name="links_columns">1</integer>
+
+
+    <string name="long_text">Note about data ownership on Google Play and Cloud Platform: Your Google Play developer account is gaining access to a dedicated, read-only Google Cloud Storage bucket owned by Google Play. If you’re a Google Cloud Storage customer, the rest of your data is unaffected and not connected to your Google Play developer account. Google Cloud Storage customers can find out more about their data storage on the terms of service page. Note about data ownership on Google Play and Cloud Platform: Your Google Play developer account is gaining access to a dedicated, read-only Google Cloud Storage bucket owned by Google Play. If you’re a Google Cloud Storage customer, the rest of your data is unaffected and not connected to your Google Play developer account. Google Cloud Storage customers can find out more about their data storage on the terms of service page.</string>
+    <string name="long_text1">Material design is a comprehensive guide for visual, motion, and interaction design across platforms and devices. Android now includes support for material design apps. To use material design in your Android apps, follow the guidelines defined in the material design specification and use the new components and functionality available in Android 5.0 (API level 21) and above.</string>
+
+</resources>
