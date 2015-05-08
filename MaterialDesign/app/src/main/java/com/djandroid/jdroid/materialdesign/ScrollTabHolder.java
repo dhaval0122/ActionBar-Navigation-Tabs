@@ -3,7 +3,7 @@ package com.djandroid.jdroid.materialdesign;
 import android.widget.ScrollView;
 
 /**
- * Created by VCSDEV0100 on 4/28/2015.
+ * Created by dhawal sodha parmar on 4/28/2015.
  */
 public interface ScrollTabHolder {
 

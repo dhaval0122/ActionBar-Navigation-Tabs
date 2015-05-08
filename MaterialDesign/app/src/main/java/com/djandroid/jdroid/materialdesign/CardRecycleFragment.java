@@ -26,7 +26,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by VCSDEV0100 on 5/4/2015.
+ * Created by dhawal sodha parmar on 5/4/2015.
  */
 public class CardRecycleFragment extends Fragment {
 

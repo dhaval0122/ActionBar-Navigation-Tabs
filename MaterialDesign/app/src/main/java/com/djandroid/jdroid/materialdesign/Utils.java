@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.regex.Pattern;
 
 /**
- * Created by VCSDEV0100 on 4/24/2015.
+ * Created by dhawal sodha parmar on 4/24/2015.
  */
 public class Utils {
 

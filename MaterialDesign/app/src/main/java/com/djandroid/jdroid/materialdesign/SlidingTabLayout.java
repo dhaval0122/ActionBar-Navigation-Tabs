@@ -20,7 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
- * Created by VCSDEV0100 on 4/30/2015.
+ * Created by dhawal sodha parmar on 4/30/2015.
  */
 public class SlidingTabLayout extends HorizontalScrollView {
 

@@ -37,7 +37,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /**
- * Created by VCSDEV0100 on 5/1/2015.
+ * Created by dhawal sodha parmar on 5/1/2015.
  */
 public class DetailViewActivity extends AppCompatActivity implements ObservableScrollView.Callbacks {
 

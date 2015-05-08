@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.widget.ScrollView;
 
 /**
- * Created by VCSDEV0100 on 4/28/2015.
+ * Created by dhawal sodha parmar on 4/28/2015.
  */
 public abstract class ScrollTabHolderFragment extends Fragment implements ScrollTabHolder {
     protected ScrollTabHolder mScrollTabHolder;
