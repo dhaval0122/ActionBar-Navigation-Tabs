@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 
 import com.djandroid.jdroid.materialdesign.googleio.AddToScheduleFABFrameLayout;
+import com.djandroid.jdroid.materialdesign.googleio.CheckableFrameLayout;
 import com.djandroid.jdroid.materialdesign.googleio.ObservableScrollView;
 
 import java.util.ArrayList;
@@ -67,7 +68,7 @@ public class DetailViewActivity extends AppCompatActivity implements ObservableS
     private LinearLayout mTags;
     private ViewGroup mTagsContainer;
     private TextView mRequirements;
-    AddToScheduleFABFrameLayout mAddScheduleButton;
+    CheckableFrameLayout mAddScheduleButton;
     public static final String TRANSITION_NAME_PHOTO = "photo";
 
     private boolean mHasSummaryContent = false;
@@ -157,7 +158,7 @@ public class DetailViewActivity extends AppCompatActivity implements ObservableS
         mTags = (LinearLayout) findViewById(R.id.session_tags);
         mTagsContainer = (ViewGroup) findViewById(R.id.session_tags_container);
 
-        mAddScheduleButton = (AddToScheduleFABFrameLayout) findViewById(R.id.add_schedule_button);
+        mAddScheduleButton = (CheckableFrameLayout) findViewById(R.id.add_schedule_button);
         mAddScheduleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -271,7 +272,9 @@ public class DetailViewActivity extends AppCompatActivity implements ObservableS
         }
 
         mHeaderBox.setBackgroundColor(mSessionColor);
-        getWindow().setStatusBarColor(Utils.scaleColor(mSessionColor, 0.8f, false));
+        if(MyApplication.isLollipop()) {
+            getWindow().setStatusBarColor(Utils.scaleColor(mSessionColor, 0.8f, false));
+        }
 
         mLivestreamUrl = "";
         mHasLivestream = !TextUtils.isEmpty(mLivestreamUrl);

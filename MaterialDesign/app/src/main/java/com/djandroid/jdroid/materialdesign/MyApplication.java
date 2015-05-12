@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
+import android.os.Build;
 import android.util.TypedValue;
 import android.view.WindowManager;
 
@@ -26,6 +27,11 @@ public class MyApplication extends Application {
     }
 
 
-
+    public static boolean isLollipop(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            return true;
+        }
+        return false;
+    }
 
 }

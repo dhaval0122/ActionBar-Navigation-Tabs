@@ -34,6 +34,7 @@ import android.support.v7.graphics.Palette;
 import android.support.v7.graphics.Palette.PaletteAsyncListener;
 
 import com.djandroid.jdroid.materialdesign.googleio.AddToScheduleFABFrameLayout;
+import com.djandroid.jdroid.materialdesign.googleio.CheckableFrameLayout;
 import com.djandroid.jdroid.materialdesign.googleio.ObservableScrollView;
 import com.djandroid.jdroid.materialdesign.googleio.ProgressDrawable;
 
@@ -68,7 +69,7 @@ public class SocialActivity extends AppCompatActivity implements ObservableScrol
     private int toolbarHeight;
     private int quasiFabCenterHeight;
     private int[] location = new int[2];
-    AddToScheduleFABFrameLayout mAddScheduleButton;
+    CheckableFrameLayout mAddScheduleButton;
 
 
     @Override
@@ -85,7 +86,7 @@ public class SocialActivity extends AppCompatActivity implements ObservableScrol
         bodyLayout = (LinearLayout) root.findViewById(R.id.body_layout);
         bodyTextView = (TextView) root.findViewById(R.id.test_text);
 
-        mAddScheduleButton = (AddToScheduleFABFrameLayout) findViewById(R.id.add_schedule_button);
+        mAddScheduleButton = (CheckableFrameLayout) findViewById(R.id.add_schedule_button);
         mAddScheduleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

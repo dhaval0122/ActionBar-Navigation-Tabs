@@ -13,6 +13,7 @@ import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
 
+import com.djandroid.jdroid.materialdesign.MyApplication;
 import com.djandroid.jdroid.materialdesign.R;
 
 
@@ -57,14 +58,16 @@ public class AddToScheduleFABFrameLayout extends CheckableFrameLayout {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        ViewOutlineProvider viewOutlineProvider = new ViewOutlineProvider() {
-            @Override
-            public void getOutline(View view, Outline outline) {
-                outline.setOval(0, 0, view.getWidth(), view.getHeight());
-            }
-        };
-        setOutlineProvider(viewOutlineProvider);
-        setClipToOutline(true);
+        if(MyApplication.isLollipop()) {
+            ViewOutlineProvider viewOutlineProvider = new ViewOutlineProvider() {
+                @Override
+                public void getOutline(View view, Outline outline) {
+                    outline.setOval(0, 0, view.getWidth(), view.getHeight());
+                }
+            };
+            setOutlineProvider(viewOutlineProvider);
+            setClipToOutline(true);
+        }
     }
 
     @Override
@@ -90,7 +93,9 @@ public class AddToScheduleFABFrameLayout extends CheckableFrameLayout {
             RippleDrawable newBackground = (RippleDrawable) getResources().getDrawable(mChecked
                     ? R.drawable.add_schedule_fab_ripple_background_on
                     : R.drawable.add_schedule_fab_ripple_background_off);
-            setBackground(newBackground);
+            if(MyApplication.isLollipop()) {
+                setBackground(newBackground);
+            }
         }
     }
 }

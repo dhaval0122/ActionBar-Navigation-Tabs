@@ -258,7 +258,9 @@ public class NavigationDrawFragment extends Fragment {
         if (selected) {
             view.setBackgroundResource(R.drawable.selected_navdrawer_item_background);
         } else {
-            view.setBackgroundResource(R.drawable.navdrawer_item_background);
+            if(MyApplication.isLollipop()) {
+                view.setBackgroundResource(R.drawable.navdrawer_item_background);
+            }
         }
 
         // configure its appearance according to whether or not it's selected

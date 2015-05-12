@@ -14,16 +14,18 @@
   limitations under the License.
   -->
 
-<com.djandroid.jdroid.materialdesign.googleio.CheckableFrameLayout
+<com.djandroid.jdroid.materialdesign.googleio.AddToScheduleFABFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/add_schedule_button"
-    android:layout_width="@dimen/add_to_schedule_button_height"
-    android:layout_height="@dimen/add_to_schedule_button_height"
-    android:layout_marginLeft="8dp"
+    android:layout_width="@dimen/add_to_schedule_button_height_no_padding"
+    android:layout_height="@dimen/add_to_schedule_button_height_no_padding"
+    android:layout_marginLeft="@dimen/keyline_1"
     android:visibility="invisible"
     android:clickable="true"
     android:focusable="true"
-    android:background="@drawable/add_schedule_fab_background"
+    android:elevation="@dimen/fab_elevation"
+    android:background="@drawable/add_schedule_fab_ripple_background_off"
+    android:stateListAnimator="@anim/add_schedule_fab_state_list_anim"
     android:contentDescription="@string/add_to_schedule">
 
     <ImageView android:id="@+id/add_schedule_icon"
@@ -34,4 +36,5 @@
         android:contentDescription="@null"
         android:layout_gravity="center" />
 
-</com.djandroid.jdroid.materialdesign.googleio.CheckableFrameLayout>
+</com.djandroid.jdroid.materialdesign.googleio.AddToScheduleFABFrameLayout>
+

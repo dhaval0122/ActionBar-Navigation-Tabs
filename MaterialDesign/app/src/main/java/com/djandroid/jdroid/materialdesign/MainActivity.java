@@ -240,35 +240,43 @@ public class MainActivity extends AppCompatActivity
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = null;
+            if(MyApplication.isLollipop()) {
+                 rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            }else{
+                rootView = inflater.inflate(R.layout.fragment_main_pre, container, false);
+            }
 
             ListView list = (ListView) rootView.findViewById(R.id.listView);
             ListViewAdapter listAdapter = new ListViewAdapter(getActivity().getApplicationContext(),
                     getResources().getStringArray(R.array.android_version));
             list.setAdapter(listAdapter);
 
-            FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab_2);
-            fab.attachToListView(list, new ScrollDirectionListener() {
-                @Override
-                public void onScrollDown() {
-                    Log.d("ListViewFragment", "onScrollDown()");
-                }
+            if(MyApplication.isLollipop()) {
+                FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab_2);
+                fab.attachToListView(list, new ScrollDirectionListener() {
+                    @Override
+                    public void onScrollDown() {
+                        Log.d("ListViewFragment", "onScrollDown()");
+                    }
 
-                @Override
-                public void onScrollUp() {
-                    Log.d("ListViewFragment", "onScrollUp()");
-                }
-            }, new AbsListView.OnScrollListener() {
-                @Override
-                public void onScrollStateChanged(AbsListView view, int scrollState) {
-                    Log.d("ListViewFragment", "onScrollStateChanged()");
-                }
+                    @Override
+                    public void onScrollUp() {
+                        Log.d("ListViewFragment", "onScrollUp()");
+                    }
+                }, new AbsListView.OnScrollListener() {
+                    @Override
+                    public void onScrollStateChanged(AbsListView view, int scrollState) {
+                        Log.d("ListViewFragment", "onScrollStateChanged()");
+                    }
 
-                @Override
-                public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                    Log.d("ListViewFragment", "onScroll()");
-                }
-            });
+                    @Override
+                    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                        Log.d("ListViewFragment", "onScroll()");
+                    }
+                });
+            }
             return rootView;
         }
 

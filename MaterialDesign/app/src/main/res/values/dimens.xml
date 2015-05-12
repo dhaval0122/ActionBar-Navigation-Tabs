@@ -10,6 +10,7 @@
     <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
          https://developer.android.com/design/patterns/navigation-drawer.html -->
     <dimen name="navigation_drawer_width">320dp</dimen>
+    <dimen name="add_to_schedule_button_height">56dp</dimen>
 
     <dimen name="fab_elevation">8dp</dimen>
     <dimen name="fab_press_translation_z">9dp</dimen>
